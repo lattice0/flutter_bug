@@ -30,11 +30,13 @@ subprojects {
     project.evaluationDependsOn(':app')
 }
 
+/*
 tasks.whenTaskAdded { task ->
     if ((task.name == 'javaPreCompileDebug' || task.name == 'javaPreCompileRelease')) {
         task.dependsOn 'cargoBuild'
     }
 }
+*/
 
 task clean(type: Delete) {
     delete rootProject.buildDir
